@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace MauiAppTest
+namespace MauiPrismDialogErrorDemoApp
 {
     internal class Program : MauiApplication
     {

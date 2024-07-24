@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace MauiAppTest
+namespace MauiPrismDialogErrorDemoApp
 {
     [Application]
     public class MainApplication : MauiApplication

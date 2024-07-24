@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MauiAppTest
+namespace MauiPrismDialogErrorDemoApp
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

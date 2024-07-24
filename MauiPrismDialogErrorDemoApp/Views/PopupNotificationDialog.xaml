@@ -6,9 +6,9 @@
       mc:Ignorable="d"
       xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
       xmlns:prism="http://prismlibrary.com"
-      xmlns:viewmodel="clr-namespace:MauiAppTest.ViewModel"
+      xmlns:viewmodel="clr-namespace:MauiPrismDialogErrorDemoApp.ViewModel"
       x:DataType="viewmodel:PopupNotificationDialogViewModel"
-      x:Class="MauiAppTest.Views.PopupNotificationDialog"
+      x:Class="MauiPrismDialogErrorDemoApp.Views.PopupNotificationDialog"
       prism:DialogLayout.UseMask="True"
       prism:DialogLayout.RelativeHeightRequest="1"
       prism:DialogLayout.RelativeWidthRequest="1">

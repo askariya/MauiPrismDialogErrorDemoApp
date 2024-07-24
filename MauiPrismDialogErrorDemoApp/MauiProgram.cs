@@ -1,10 +1,11 @@
 ﻿using CommunityToolkit.Maui;
-using MauiAppTest.ViewModel;
-using MauiAppTest.Views;
+using MauiPrismDialogErrorDemoApp.Services;
+using MauiPrismDialogErrorDemoApp.ViewModel;
+using MauiPrismDialogErrorDemoApp.Views;
 using Microsoft.Extensions.Logging;
 using Prism.Plugin.Popups;
 
-namespace MauiAppTest
+namespace MauiPrismDialogErrorDemoApp
 {
     public static class MauiProgram
     {
@@ -19,7 +20,9 @@ namespace MauiAppTest
                     {
                         container.RegisterForNavigation<MainPage, MainPageViewModel>();
                         container.RegisterDialog<PopupNotificationDialog, PopupNotificationDialogViewModel>();
+                        container.RegisterSingleton<ICustomPopupService, CustomPopupService>();
                     });
+                    prism.ConfigureMopupDialogs();
                     prism.CreateWindow(navigationService => navigationService.CreateBuilder()
                                                                              .UseAbsoluteNavigation()
                                                                              .AddNavigationPage()

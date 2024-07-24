@@ -1,4 +1,4 @@
-﻿namespace MauiAppTest.ViewModel
+﻿namespace MauiPrismDialogErrorDemoApp.ViewModel
 {
     public class PopupNotificationDialogViewModel : BindableBase, IDialogAware
     {
@@ -57,7 +57,7 @@
 
         public void Finish(ButtonResult result)
         {
-            RequestClose.Invoke();
+            RequestClose.Invoke(result);
         }
 
         bool IDialogAware.CanCloseDialog()

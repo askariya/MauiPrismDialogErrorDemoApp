@@ -1,4 +1,4 @@
-﻿namespace MauiAppTest.Views
+﻿namespace MauiPrismDialogErrorDemoApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PopupNotificationDialog

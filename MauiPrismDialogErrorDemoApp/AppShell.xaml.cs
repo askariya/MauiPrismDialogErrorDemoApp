@@ -1,4 +1,4 @@
-﻿namespace MauiAppTest
+﻿namespace MauiPrismDialogErrorDemoApp
 {
     public partial class AppShell : Shell
     {

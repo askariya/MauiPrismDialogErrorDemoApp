@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
-             xmlns:viewmodel="clr-namespace:MauiAppTest.ViewModel"
+             xmlns:viewmodel="clr-namespace:MauiPrismDialogErrorDemoApp.ViewModel"
              x:DataType="viewmodel:MainPageViewModel"
-             x:Class="MauiAppTest.Views.MainPage">
+             x:Class="MauiPrismDialogErrorDemoApp.Views.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -25,13 +25,17 @@
                 Text="Welcome to &#10;.NET Multi-platform App UI"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                SemanticProperties.Description="Welcome to dot net Multi platform App UI" />
 
             <Button
-                x:Name="CounterBtn"
                 Text="Open Mopup"
                 HorizontalOptions="Fill" 
-                Command="{Binding DisplayMopupCommand}"/>
+                Command="{Binding DisplayPopupCommand}"/>
+
+            <Button
+                Text="Trigger Absolute Navigation"
+                HorizontalOptions="Fill" 
+                Command="{Binding AbsoluteNavigationCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 

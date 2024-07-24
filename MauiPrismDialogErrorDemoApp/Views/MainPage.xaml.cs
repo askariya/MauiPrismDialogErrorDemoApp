@@ -1,4 +1,4 @@
-﻿namespace MauiAppTest.Views
+﻿namespace MauiPrismDialogErrorDemoApp.Views
 {
     public partial class MainPage : ContentPage
     {

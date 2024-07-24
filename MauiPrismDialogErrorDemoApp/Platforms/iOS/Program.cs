@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiAppTest
+namespace MauiPrismDialogErrorDemoApp
 {
     public class Program
     {
