@@ -3,26 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              xmlns:viewmodel="clr-namespace:MauiPrismDialogErrorDemoApp.ViewModel"
-             x:DataType="viewmodel:MainPageViewModel"
-             x:Class="MauiPrismDialogErrorDemoApp.Views.MainPage">
+             x:DataType="viewmodel:SecondPageViewModel"
+             x:Class="MauiPrismDialogErrorDemoApp.Views.SecondPage">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Main Page"
+                Text="Second Page"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text="Welcome to the Main Page"
+                Text="Welcome to the 2nd Page"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"/>
 
@@ -38,18 +33,6 @@
                 TextColor="White"
                 HorizontalOptions="Fill" 
                 Command="{Binding DisplayPopupLocalCommand}"/>
-
-            <Button
-                BackgroundColor="Pink"
-                Text="Trigger ABSOLUTE Navigation To Second Page"
-                HorizontalOptions="Fill" 
-                Command="{Binding AbsoluteNavigationCommand}"/>
-
-            <Button
-                BackgroundColor="LightGreen"
-                Text="Trigger RELATIVE Navigation To Second Page"
-                HorizontalOptions="Fill" 
-                Command="{Binding RelativeNavigationCommand}"/>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Maui;
+﻿//#define USE_MOPUPS
+using CommunityToolkit.Maui;
 using MauiPrismDialogErrorDemoApp.Services;
 using MauiPrismDialogErrorDemoApp.ViewModel;
 using MauiPrismDialogErrorDemoApp.Views;
@@ -19,16 +20,18 @@ namespace MauiPrismDialogErrorDemoApp
                     prism.RegisterTypes(container =>
                     {
                         container.RegisterForNavigation<MainPage, MainPageViewModel>();
+                        container.RegisterForNavigation<SecondPage, SecondPageViewModel>();
                         container.RegisterDialog<PopupNotificationDialog, PopupNotificationDialogViewModel>();
                         container.RegisterSingleton<ICustomPopupService, CustomPopupService>();
                     });
+#if USE_MOPUPS
                     prism.ConfigureMopupDialogs();
+#endif
                     prism.CreateWindow(navigationService => navigationService.CreateBuilder()
                                                                              .UseAbsoluteNavigation()
                                                                              .AddNavigationPage()
                                                                              .AddSegment<MainPageViewModel>()
                                                                              .NavigateAsync());
-                    prism.ConfigureMopupDialogs();
                 })
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>

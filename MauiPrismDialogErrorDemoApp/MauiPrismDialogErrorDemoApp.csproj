@@ -69,12 +69,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\SecondPage.xaml.cs">
+	    <DependentUpon>SecondPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\PopupNotificationDialog.xaml.cs">
 	    <DependentUpon>PopupNotificationDialog.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\SecondPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PopupNotificationDialog.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
